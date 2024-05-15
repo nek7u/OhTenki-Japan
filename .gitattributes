@@ -1,0 +1,9 @@
+# * export-ignore
+wiki export-ignore
+.github export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+README.md export-ignore
+
+# https://github.com/github/linguist/#using-gitattributes
+* linguist-documentation
