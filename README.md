@@ -3,7 +3,7 @@
 <!-- #Rainmeter -->
 # [OhTenki Japan](https://github.com/nek7u/OhTenki-Japan/wiki)
 A [Rainmeter](https://www.rainmeter.net/) Weather skin for people living in JAPAN.  
-[Rainmeter](https://www.rainmeter.net/) is a desktop customization tool for Microsoft Windows.  
+[Rainmeter](https://www.rainmeter.net/) is a desktop customization tool for **Microsoft Windows**.  
 週間天気や雨雲レーダーなどをデスクトップに表示する[Rainmeter](https://www.rainmeter.net/)用お天気スキン
 
 ### [>> Home <<](https://github.com/nek7u/OhTenki-Japan/wiki)
