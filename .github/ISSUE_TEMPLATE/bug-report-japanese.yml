@@ -17,9 +17,9 @@ body:
       required: true
 
   - type: textarea
-    id: 不具合の再現方法
+    id: how-to-reproduce
     attributes:
-      label: できるだけ簡潔かつ正確に 再現方法を記入してください。
+      label: 不具合の再現方法を記入してください。(できるだけ簡潔かつ正確に)
       description: |
                     - **OhTenki Japan** 以外のスキンを閉じてください。
 
