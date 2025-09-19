@@ -1,0 +1,40 @@
+﻿# > About YAML syntax for issue forms | https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+
+name: Bug Report
+description: バグレポートをする
+title: "[不具合]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: 不具合の内容
+      description: |
+        どんな問題が起きているか説明してください。
+
+        Tip: この入力欄をクリックして選択し、ファイルをドラッグすることで画像を添付できます。
+    validations:
+      required: true
+
+  - type: textarea
+    id: 不具合の再現方法
+    attributes:
+      label: できるだけ簡潔かつ正確に 再現方法を記入してください。
+      description: |
+                    - **OhTenki Japan** 以外のスキンを閉じてください。
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 動作環境
+      description:  |
+        1. Rainmeterアイコンを右クリック > 詳細 > バージョン
+        1. `クリップボードにコピー` ボタンをクリックし、 入力欄に貼り付けてください。
+        
+      placeholder: |
+        Rainmeter 4.5.23.3836 (64-bit)
+        Language: Japanese (1041)
+        Build time: 2025-04-12 17:25:59
+        Windows 11 Pro 24H2 (build 26100.6584) 64-bit - Japanese (1041)
+    validations:
+      required: true
