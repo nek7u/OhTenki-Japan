@@ -38,3 +38,9 @@
 ehthumbs.db
 Thumbs.db
 Desktop.ini
+
+# Personal use #
+######################
+*.org
+*.sav
+
