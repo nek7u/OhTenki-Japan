@@ -12,7 +12,8 @@ body:
       description: |
         Describe how the issue manifests. What went wrong?
 
-        Tip: You can attach images by clicking this area to highlight it and then dragging files in.
+        > [!Tip]  
+        > You can attach images by clicking this area to highlight it and then dragging files in.  
     validations:
       required: true
 
