@@ -1,92 +1,64 @@
-﻿name: "🐞 Bug Report"
-description: "Report a bug encountered while developing with Uno 🚨"
-labels: [triage/untriaged, difficulty/tbd]
-type: "Bug"
+﻿name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
 body:
-  - type: textarea
-    id: current-behavior
+  - type: markdown
     attributes:
-      label: "Current behavior 🐛"
-      description: "Describe how the issue manifests. What went wrong?"
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
-
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: "Expected behavior 🎯"
-      description: "Describe what the desired behavior should be. What did you expect?"
-
-  - type: textarea
-    id: how-to-reproduce
-    attributes:
-      label: "How to reproduce it (as minimally and precisely as possible) 🔬"
-      description: |
-                    Please provide a **MINIMAL REPRO PROJECT** and the **STEPS TO REPRODUCE**
-
-                    To create a minimal reproduction project: 📦 
-
-                    - Create an Uno app through:
-                    - `dotnet new install Uno.Templates` and `dotnet new unoapp`
-                    - or through the [Visual Studio extension](https://platform.uno/docs/articles/get-started-vs-2022.html)
-                    - Make sure to add the least code possible to demonstrate the issue
-                    - Keep all project heads, even if the platforms are seemingly not relevant to your issue
-                    - Remove all the `obj/bin` folders and zip the folder.
-                    - Attach the zip file to the issue
-
-                    If the issue is visible on WebAssembly and uses only XAML: 🌐
-
-                    - Visit https://playground.platform.uno
-                    - Add your code and data context as needed
-                    - Create a link and paste it here
-  - type: textarea
-    id: workaround
-    attributes:
-      label: "Workaround 🛠️"
-      description: "Please provide steps to workaround this problem if possible. Got a hack? Share it! 💡"
-
-  - type: checkboxes
-    id: renderer
-    attributes:
-      label: "Renderer 🎨"
-      description: "Select the renderer you are using. Your application is using Skia if you find `SkiaRenderer` in your `.csproj` project file."
-      options:
-        - label: "Skia"
-        - label: "Native"
-
   - type: dropdown
-    id: platforms
+    id: version
     attributes:
-      label: "Affected platforms 📱💻🖥️"
-      description: "Select the platforms for which your issue is relevant 🌍"
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
       multiple: true
       options:
-        - "All platforms 🌍"
-        - "WebAssembly"
-        - "Android"
-        - "iOS"
-        - "Desktop (Windows)"
-        - "Desktop (macOS)"
-        - "Desktop (X11)"
-        - "Desktop (Linux Framebuffer)"
-        - "Windows App SDK"
-        - "Build tasks"
-
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
   - type: textarea
-    id: nuget-versions
+    id: logs
     attributes:
-      label: "Uno.Sdk version (and other relevant versions) 📦"
-      description: "Please provide the version of the Uno.Sdk you are using. This can be found in the `global.json` file."
-
-  - type: input
-    id: ide
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
     attributes:
-      label: "IDE version 🧑‍💻"
-      description: "Please provide the full name and version of the IDE you are using, e.g. `Visual Studio 2022 17.14.2`."
-
-  - type: textarea
-    id: additional-info
-    attributes:
-      label: "Anything else we need to know? 💬"
-      description: "We would love to know of any friction, apart from knowledge, that prevented you from sending in a pull-request"
-      
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
