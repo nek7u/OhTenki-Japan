@@ -11,8 +11,10 @@ body:
       label: Current behavior
       description: |
         Describe how the issue manifests. What went wrong?
+
         > [!TIP]
         > You can attach images by clicking this area to highlight it and then dragging files in.
+        
     validations:
       required: true
 
