@@ -1,7 +1,7 @@
 ﻿# > About YAML syntax for issue forms | https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
 
 name: Bug Report
-description: File a bug report.
+description: Create a new issue as a bug report.
 title: "[Bug]: "
 labels: ["bug"]
 body:
@@ -11,8 +11,8 @@ body:
       label: Current behavior
       description: |
         Describe how the issue manifests. What went wrong?
-        
-        Tip: You can attach images by clicking this area to highlight it and then dragging files in.
+        > [!TIP]
+        > You can attach images by clicking this area to highlight it and then dragging files in.
     validations:
       required: true
 
@@ -21,7 +21,6 @@ body:
     attributes:
       label: How to reproduce it (as minimally and precisely as possible)
       description: |
-                    To create a minimal reproduction:
                     - Unload all skins except **OhTenki Japan** skin
 
   - type: textarea
