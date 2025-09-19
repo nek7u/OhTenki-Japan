@@ -1,7 +1,7 @@
 ﻿# > About YAML syntax for issue forms | https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
 
-name: Bug Report - Japanese
-description: バグレポートをする
+name: バグレポート
+description: バグ、不具合など起きている問題を連絡する
 title: "[不具合]: "
 labels: ["bug"]
 body:
