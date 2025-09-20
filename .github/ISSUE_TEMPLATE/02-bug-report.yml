@@ -12,10 +12,14 @@ body:
       label: Current behavior
       description: |
         Describe how the issue manifests. What went wrong?
-
-        Tip: You can attach images by clicking this area to highlight it and then dragging files in.
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        > [!TIP]
+        > You can attach images by clicking this area to highlight it and then dragging files in.
 
   - type: textarea
     id: how-to-reproduce

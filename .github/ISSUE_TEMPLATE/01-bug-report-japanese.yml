@@ -12,7 +12,6 @@ body:
       label: 不具合の内容
       description: |
         どんな問題が起きているか説明してください。
-
     validations:
       required: true
 
