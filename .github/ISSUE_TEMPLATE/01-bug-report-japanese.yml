@@ -35,6 +35,7 @@ body:
     attributes:
       label: 不具合の再現方法を記入してください。(できるだけ簡潔かつ正確に)
       description:  |
+        ""
 
   - type: textarea
     id: environment
