@@ -1,17 +1,26 @@
-﻿# > About YAML syntax for issue forms | https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+﻿#
+# Issue & PR templates
+#
+# `/issues/new/choose`  
+# `/issues/new?template=bug-report.yml`  
+#
+# > About YAML syntax for issue forms | https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
 # > About GitHub's form schema        | https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema#about-githubs-form-schema
+#
 
 name: Bug Report
 description: Create a new issue as a bug report.
 title: "[Bug]: "
 labels: ["bug"]
 body:
+
   - type: textarea
     id: current-behavior
     attributes:
       label: Current behavior
       description: |
         Describe how the issue manifests. What went wrong?
+        Unload all skins except **OhTenki Japan** skin.
     validations:
       required: true
 
@@ -25,8 +34,6 @@ body:
     id: how-to-reproduce
     attributes:
       label: How to reproduce it (as minimally and precisely as possible)
-      description: |
-                    - Unload all skins except **OhTenki Japan** skin
 
   - type: textarea
     id: environment
@@ -35,7 +42,6 @@ body:
       description:  |
         1. Right-click the Rainmeter icon > About > Version
         1. Click the `Copy to clipboard` button, then paste it into the textarea.
-        
       placeholder: |
         Rainmeter 4.5.23.3836 (64-bit)
         Language: English (1033)
