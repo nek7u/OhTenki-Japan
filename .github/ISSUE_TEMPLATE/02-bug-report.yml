@@ -35,6 +35,7 @@ body:
     attributes:
       label: How to reproduce it (as minimally and precisely as possible)
       description:  |
+        ""
 
   - type: textarea
     id: environment
