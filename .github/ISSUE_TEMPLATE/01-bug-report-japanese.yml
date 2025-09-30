@@ -11,7 +11,7 @@
 
 name: バグレポート
 description: 不具合など起きている問題を報告する
-title: "[不具合]: "
+title: "[不具合] "
 labels: ["bug"]
 body:
 

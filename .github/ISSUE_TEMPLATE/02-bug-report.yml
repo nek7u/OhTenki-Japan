@@ -11,7 +11,7 @@
 
 name: Bug Report
 description: Create a new issue as a bug report.
-title: "[Bug]: "
+title: "[Bug] "
 labels: ["bug"]
 body:
 
