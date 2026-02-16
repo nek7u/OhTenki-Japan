@@ -29,7 +29,7 @@ body:
     attributes:
       value: |
         > [!TIP]
-        > この入力欄をクリックして選択し、ファイルをドラッグすることで画像を添付できます。
+        > 画像ファイルを添付するには コメント欄にファイルをドラッグ&ドロップしてください。
 
   - type: textarea
     id: how-to-reproduce
